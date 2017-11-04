@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ventana</class>
+ <widget class="QWidget" name="Ventana">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>348</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NigthApp</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Version Clase generica/NightAppBeta v5.7/NightAppBETA/recursos/images/gafasman.jpg</normaloff>../Version Clase generica/NightAppBeta v5.7/NightAppBETA/recursos/images/gafasman.jpg</iconset>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>311</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="sw_page1">
+    <widget class="Mapa" name="map1" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>311</width>
+       <height>181</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="sw_page2">
+    <widget class="SitesRoute" name="map2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>301</width>
+       <height>182</height>
+      </rect>
+     </property>
+     <widget class="QTextEdit" name="le_dTime">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pb_back">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>460</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Volver</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QDockWidget" name="datos_Lugar">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>280</y>
+     <width>201</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Malgun Gothic&quot;;
+</string>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="features">
+    <set>QDockWidget::AllDockWidgetFeatures</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllDockWidgetAreas</set>
+   </property>
+   <property name="windowTitle">
+    <string>DATOS DEL LUGAR</string>
+   </property>
+   <widget class="QWidget" name="dockWidgetContents">
+    <widget class="QListWidget" name="lw_listcharac">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>201</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pb_update">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>460</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Recursos/images/plano.png</normaloff>Recursos/images/plano.png</iconset>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="lw_listplaces">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>321</width>
+     <height>161</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>240</y>
+     <width>37</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>240</y>
+     <width>37</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>0</y>
+     <width>341</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="LineaDeTexto" name="le_search"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pb_search">
+      <property name="text">
+       <string>Buscar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QComboBox" name="cb_categories">
+      <item>
+       <property name="text">
+        <string>Seleccionar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Boliche</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Restaurante</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Casino</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Museo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Teatro</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>lw_listplaces</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>pb_back</zorder>
+  <zorder>pb_update</zorder>
+  <zorder>stackedWidget</zorder>
+  <zorder>datos_Lugar</zorder>
+  <zorder>spinBox_2</zorder>
+  <zorder>spinBox</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Mapa</class>
+   <extends>QWidget</extends>
+   <header>mapa.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SitesRoute</class>
+   <extends>QWidget</extends>
+   <header>sitesroute.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LineaDeTexto</class>
+   <extends>QLineEdit</extends>
+   <header location="global">lineadetexto.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
